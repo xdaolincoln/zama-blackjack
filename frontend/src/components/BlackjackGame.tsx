@@ -1215,7 +1215,7 @@ export const BlackjackGame = () => {
                 <div className="w-full max-w-[80%] mx-auto h-full flex items-center justify-between px-4 sm:px-6">
                     <div className="flex items-center gap-2">
                         <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
-                        <span className="font-bold text-xl hidden sm:inline">FHE Blackjack</span>
+                        <span className="font-bold text-xl hidden sm:inline">BlindJack</span>
                     </div>
                     
                     <div className="flex items-center gap-4">
@@ -1466,7 +1466,7 @@ export const BlackjackGame = () => {
             
             {/* Footer */}
             <footer className="bg-slate-900 border-t border-slate-800 py-4 px-6 text-center text-slate-500 text-sm">
-                <p>© 2025 FHE Blackjack. Powered by Fully Homomorphic Encryption (FHE) from Zama.</p>
+                <p>© 2025 BlindJack. Powered by Fully Homomorphic Encryption (FHE) from Zama.</p>
             </footer>
 
             </div>

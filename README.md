@@ -1,4 +1,4 @@
-# 🎰 FHE Blackjack Game
+# 🎰 BlindJack
 
 A privacy-preserving decentralized Blackjack game built with Zama's **FHE (Fully Homomorphic Encryption)** technology on the **Sepolia** testnet.
 
@@ -130,7 +130,7 @@ Wallet data stored in browser `localStorage`:
 ## 📦 Project Structure
 
 The project consists of:
-1.  **Contracts**: A Hardhat project containing the FHE Blackjack Smart Contract
+1.  **Contracts**: A Hardhat project containing the BlindJack Smart Contract
 2.  **Frontend**: A React (Vite) application with in-app wallet and game interface
 
 ## 🛠️ Setup Instructions
