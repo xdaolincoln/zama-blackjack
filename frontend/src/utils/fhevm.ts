@@ -2,18 +2,14 @@ import { BrowserProvider, getAddress, toBeHex, zeroPadValue, Signer } from "ethe
 
 let fheInstance: any = null;
 
+// Sepolia RPC endpoint (fallback when window.ethereum is not available)
+const SEPOLIA_RPC = 'https://ethereum-sepolia-rpc.publicnode.com';
+
 export const initializeFheInstance = async () => {
     if (fheInstance) return fheInstance;
 
     if (typeof window === 'undefined') {
         throw new Error('Window not available');
-    }
-    
-    // FHEVM SDK requires window.ethereum, but we can create a mock if needed
-    // For now, still require it but log a warning
-    if (!window.ethereum) {
-        console.warn('window.ethereum not found - FHEVM might not work properly');
-        // Try to continue anyway - SDK might handle it
     }
 
     // @ts-ignore
@@ -26,7 +22,10 @@ export const initializeFheInstance = async () => {
 
     await initSDK();
 
-    const config = { ...SepoliaConfig, network: window.ethereum };
+    // Use window.ethereum if available (MetaMask), otherwise use RPC URL (for in-app wallet)
+    const network = window.ethereum || SEPOLIA_RPC;
+
+    const config = { ...SepoliaConfig, network };
 
     try {
         fheInstance = await createInstance(config);
