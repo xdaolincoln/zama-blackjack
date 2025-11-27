@@ -1,0 +1,549 @@
+{
+  "address": "0xB9bE96C688cD11566a95FB43468E5E65d893B975",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "ZamaProtocolUnsupported",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "CHIP_PER_ETH",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "buyChips",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "chipBalances",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "confidentialProtocolId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "dealerHit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "endGame",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "games",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "player",
+          "type": "address"
+        },
+        {
+          "internalType": "euint32",
+          "name": "betAmount",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "plainBetAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "deckIndex",
+          "type": "uint8"
+        },
+        {
+          "internalType": "euint8",
+          "name": "playerCard1",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint8",
+          "name": "playerCard2",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint8",
+          "name": "dealerCardUp",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint8",
+          "name": "dealerHoleCard",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "playerSum",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "dealerSum",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "playerBaseSum",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "dealerBaseSum",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "playerAceCount",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "dealerAceCount",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "bustFlag",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "winFlag",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "euint32",
+          "name": "continueFlag",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "enum FHEBlackjack.Phase",
+          "name": "phase",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bool",
+          "name": "exists",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getBetAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "betAmountHandle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getBustFlag",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "bustFlagHandle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getContinueFlag",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "continueFlagHandle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getDealerCards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "cardUpHandle",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "holeCardHandle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "index",
+          "type": "uint8"
+        }
+      ],
+      "name": "getDeckCard",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "cardHandle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getGameState",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "player",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "betAmountHandle",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint8",
+          "name": "deckIndex",
+          "type": "uint8"
+        },
+        {
+          "internalType": "enum FHEBlackjack.Phase",
+          "name": "phase",
+          "type": "uint8"
+        },
+        {
+          "internalType": "bool",
+          "name": "exists",
+          "type": "bool"
+        },
+        {
+          "internalType": "uint256",
+          "name": "playerSumHandle",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "dealerSumHandle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getPlayerCards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "card1Handle",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "card2Handle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getSums",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "playerSumHandle",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "dealerSumHandle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "getWinFlag",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "winFlagHandle",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "hit",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "nextGameId",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "playerWon",
+          "type": "bool"
+        }
+      ],
+      "name": "payoutWinner",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "chipAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "sellChips",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "setBustPhase",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "name": "stand",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "externalEuint8[52]",
+          "name": "encDeck",
+          "type": "bytes32[52]"
+        },
+        {
+          "internalType": "bytes",
+          "name": "attestation",
+          "type": "bytes"
+        },
+        {
+          "internalType": "externalEuint32",
+          "name": "encryptedBet",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "betProof",
+          "type": "bytes"
+        },
+        {
+          "internalType": "uint256",
+          "name": "plainBet",
+          "type": "uint256"
+        }
+      ],
+      "name": "startGame",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "gameId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ]
+}

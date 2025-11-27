@@ -1,0 +1,94 @@
+# Dependencies (all levels)
+**/node_modules/
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+*.log
+
+# Environment variables (all levels)
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Hardhat / Solidity
+artifacts/
+cache/
+typechain-types/
+coverage/
+coverage.json
+
+# Frontend build
+frontend/dist/
+frontend/.vite/
+
+# Deployment files (may contain sensitive info)
+# Uncomment if you want to ignore deployment JSON files
+# frontend/src/deployments/
+
+# Temporary files
+*.tmp
+*.temp
+fhevmTemp/
+
+# OS files
+Thumbs.db
+.DS_Store
+*.Zone.Identifier
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Hardhat debug files
+*.dbg.json
+
+# TypeScript build info
+*.tsbuildinfo
+
+# ESLint cache
+.eslintcache
+
+# Cursor IDE
+.cursor/
+
+# Private keys and sensitive files
+*.pem
+*.key
+*.keystore
+*.secret
+
+# Test coverage
+.nyc_output/
+.coverage/
+
+# Vite cache
+.vite/
+frontend/.vite/
